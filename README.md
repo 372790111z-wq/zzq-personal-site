@@ -2,7 +2,9 @@
 
 访问：https://portfolio.fuluoyide.top/ （同站地址 https://zzq-personal-site.vercel.app/）。
 
-本分支 `portfolio-source` 保存新版网站的完整静态源码和素材；与主站 `source` 分支区分。
+本独立仓库 `zzq-personal-site` 保存新版网站的完整静态源码和素材，主分支为 `main`。
+
+源码：https://github.com/372790111z-wq/zzq-personal-site
 
 - `dist/index.html`：页面内容
 - `dist/style.css`：样式
