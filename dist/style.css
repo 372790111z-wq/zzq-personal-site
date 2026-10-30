@@ -31,3 +31,18 @@
 .system-diagram>span,.system-diagram>div{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0;box-shadow:none}
 .stage-frame:has(.system-diagram) .stage-title{bottom:30px;font-size:19px;letter-spacing:0}
 @media(max-width:800px){.mobile-project-visual:has(.system-diagram){height:auto;aspect-ratio:10/7;background:transparent;border:1px solid #dddcd1}.system-diagram{height:100%;min-height:0}}
+:where(.zi-family) { margin: 0 6% 74px; border: 1px solid var(--line); background: #f3efe5; }
+.zi-family-head { display: flex; align-items: end; justify-content: space-between; gap: 32px; padding: 42px 44px; border-bottom: 1px solid #d6d0c4; }
+.zi-family-head h3 { margin: 12px 0 0; font-size: clamp(28px, 3vw, 46px); line-height: 1.1; letter-spacing: -.04em; }
+.zi-family-head > a { white-space: nowrap; border-bottom: 1px solid currentColor; padding-bottom: 7px; font-size: 14px; font-weight: 700; }
+.zi-family-head > a:hover, .zi-family-grid a:hover { color: var(--accent); }
+.zi-family-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.zi-family-grid article { display: flex; flex-direction: column; min-height: 305px; padding: 30px 32px 34px; }
+.zi-family-grid article + article { border-left: 1px solid #d6d0c4; }
+.zi-family-grid img { width: 55px; height: 55px; object-fit: contain; margin-bottom: 24px; }
+.zi-family-grid article > span { color: #64745d; font: 11px ui-monospace, SFMono-Regular, monospace; letter-spacing: .04em; }
+.zi-family-grid h4 { margin: 10px 0 12px; font-size: 26px; line-height: 1.1; letter-spacing: -.04em; }
+.zi-family-grid h4 small { font-size: 13px; font-weight: 500; letter-spacing: 0; }
+.zi-family-grid p { margin: 0 0 24px; font-size: 14px; line-height: 1.8; color: #575650; }
+.zi-family-grid a { margin-top: auto; align-self: start; border-bottom: 1px solid currentColor; padding-bottom: 5px; font-size: 13px; font-weight: 700; }
+@media (max-width: 760px) { .zi-family { margin: 0 5% 56px; } .zi-family-head { align-items: start; flex-direction: column; padding: 30px 28px; } .zi-family-grid { grid-template-columns: 1fr; } .zi-family-grid article { min-height: 0; padding: 28px; } .zi-family-grid article + article { border-left: 0; border-top: 1px solid #d6d0c4; } }
