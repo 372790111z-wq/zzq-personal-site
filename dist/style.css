@@ -46,3 +46,6 @@
 .zi-family-grid p { margin: 0 0 24px; font-size: 14px; line-height: 1.8; color: #575650; }
 .zi-family-grid a { margin-top: auto; align-self: start; border-bottom: 1px solid currentColor; padding-bottom: 5px; font-size: 13px; font-weight: 700; }
 @media (max-width: 760px) { .zi-family { margin: 0 5% 56px; } .zi-family-head { align-items: start; flex-direction: column; padding: 30px 28px; } .zi-family-grid { grid-template-columns: 1fr; } .zi-family-grid article { min-height: 0; padding: 28px; } .zi-family-grid article + article { border-left: 0; border-top: 1px solid #d6d0c4; } }
+
+/* Four Zi products share a compact two-column index. */
+@media(min-width:761px){.zi-family-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.zi-family-grid article:nth-child(odd){border-left:0}.zi-family-grid article:nth-child(n+3){border-top:1px solid #d6d0c4}}
